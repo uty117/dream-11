@@ -1,36 +1,15 @@
-// @mui material components
 import Grid from "@mui/material/Grid";
-// import { red } from "@mui/material/colors";
-//  components
 import MDBox from "components/MDBox";
-// import orange from "@mui/material/colors/orange";
-//  example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
-// import Footer from "examples/Footer";
 import ReportsBarChart from "examples/Charts/BarCharts/ReportsBarChart";
-// import ReportsLineChart from "examples/Charts/LineCharts/ReportsLineChart";
 import ComplexStatisticsCard from "examples/Cards/StatisticsCards/ComplexStatisticsCard";
-// import DefaultProjectCard from "examples/Cards/ProjectCards/DefaultProjectCard";
-// import homeDecor1 from "assets/images/home-decor-1.jpg";
-// Data
-import reportsBarChartData from "layouts/dashboard/data/reportsBarChartData";
-import reportsPurpleCapData from "layouts/dashboard/data/reportsPurpleCapData";
-import reportsOrangeCapData from "layouts/dashboard/data/reportsOrangeCapData";
-import reportPoints from "layouts/dashboard/data/reportsPoints";
-import reportsmostValue from "layouts/dashboard/data/reportsmostValue";
-import reportsMostPicked from "layouts/dashboard/data/reportsmostPicked";
-// import reportsLineChartData from "layouts/dashboard/data/reportsLineChartData";
-import axios from "axios";
-// Dashboard components
 import Projects from "layouts/dashboard/components/Projects";
-// import OrdersOverview from "layouts/dashboard/components/OrdersOverview";
-import { getwins } from "hooks/dataFetch";
+
+
+import { getWins,getMostPicked,getOrange,getPurple,getMostValue,getPoints } from "hooks/dataFetch";
 
 function Dashboard() {
-  // const { tasks } = reportsLineChartData;
-  // const temp = getwins();
-  console.log(getwins());
   return (
     <DashboardLayout>
       <DashboardNavbar />
@@ -82,41 +61,6 @@ function Dashboard() {
             </MDBox>
           </Grid>
         </Grid>
-        {/* <MDBox mt={5} mb={3}>
-          <Grid container spacing={2}>
-            <Grid item xs={12} md={6} xl={3}>
-              <DefaultProjectCard
-                image={homeDecor1}
-                label="project #2"
-                title="modern"
-                description="As Uber works through a huge amount of internal management turmoil."
-                action={{
-                  type: "internal",
-                  route: "/pages/profile/profile-overview",
-                  color: "info",
-                  label: "view project",
-                }}
-              />
-            </Grid>
-            <Grid item xs={12} md={9} xl={3}>
-              VS
-            </Grid>
-            <Grid item xs={12} md={9} xl={3}>
-              <DefaultProjectCard
-                image={homeDecor1}
-                label="project #2"
-                title="modern"
-                description="As Uber works through a huge amount of internal management turmoil."
-                action={{
-                  type: "internal",
-                  route: "/pages/profile/profile-overview",
-                  color: "info",
-                  label: "view project",
-                }}
-              />
-            </Grid>
-          </Grid>
-        </MDBox> */}
         <MDBox mt={4.5}>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={4}>
@@ -126,7 +70,7 @@ function Dashboard() {
                   title="Wins Leaderboard"
                   description="IPL 2022"
                   date="Updated 1 day ago"
-                  chart={reportsBarChartData}
+                  chart={getWins()}
                 />
               </MDBox>
             </Grid>
@@ -137,7 +81,7 @@ function Dashboard() {
                   title="Most Valuable Player"
                   description="IPL 2022"
                   date="Updated 1 day ago"
-                  chart={reportsmostValue}
+                  chart={getMostValue()}
                 />
               </MDBox>
             </Grid>
@@ -148,7 +92,7 @@ function Dashboard() {
                   title="Best Pick Today"
                   description="CSK VS KKR"
                   date="Updated 1 day ago"
-                  chart={reportsMostPicked}
+                  chart={getMostPicked()}
                 />
               </MDBox>
             </Grid>
@@ -163,7 +107,7 @@ function Dashboard() {
                   title="Points Leaderboard"
                   description="IPL 2022"
                   date="Updated 1 day ago"
-                  chart={reportPoints}
+                  chart={getPoints()}
                 />
               </MDBox>
             </Grid>
@@ -174,7 +118,7 @@ function Dashboard() {
                   title="Orange Cap"
                   description="IPL 2022"
                   date="Updated 1 day ago"
-                  chart={reportsOrangeCapData}
+                  chart={getOrange()}
                 />
               </MDBox>
             </Grid>
@@ -185,7 +129,7 @@ function Dashboard() {
                   title="Purple Cap"
                   description="IPL 2022"
                   date="Updated 1 day ago"
-                  chart={reportsPurpleCapData}
+                  chart={getPurple()}
                 />
               </MDBox>
             </Grid>
