@@ -7,9 +7,12 @@ import ComplexStatisticsCard from "examples/Cards/StatisticsCards/ComplexStatist
 import Projects from "layouts/dashboard/components/Projects";
 
 
-import { getWins,getMostPicked,getOrange,getPurple,getMostValue,getPoints } from "hooks/dataFetch";
+import { getWins,getMostPicked,getOrange,getPurple,getMostValue,getPoints,getMaxWins,getMaxPoints } from "hooks/dataFetch";
 
 function Dashboard() {
+    const MostWins =getMaxWins();
+    const MostPoints = getMaxPoints();
+
   return (
     <DashboardLayout>
       <DashboardNavbar />
@@ -21,10 +24,10 @@ function Dashboard() {
                 color="warning"
                 icon="leaderboardicon"
                 title="Most Wins"
-                count={0}
+                count={MostWins.wins}
                 percentage={{
                   color: "info",
-                  amount: "TBD",
+                  amount: `${MostWins.winner}`,
                   // label: "than lask week",
                 }}
               />
@@ -36,10 +39,10 @@ function Dashboard() {
                 color="success"
                 icon="scoreicon"
                 title="Most Points"
-                count={0}
+                count={MostPoints.points}
                 percentage={{
                   color: "info",
-                  amount: "TBD",
+                  amount: `${MostPoints.winner}`,
                   // label: "Unbeaten streak",
                 }}
               />
@@ -139,9 +142,6 @@ function Dashboard() {
           <Grid container spacing={3}>
             <Grid item xs={12} md={6} lg={12}>
               <Projects />
-            </Grid>
-            <Grid item xs={12} md={6} lg={4}>
-              {/* <OrdersOverview /> */}
             </Grid>
           </Grid>
         </MDBox>
