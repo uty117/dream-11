@@ -28,6 +28,7 @@ import alok from "assets/images/alok.jpg";
 import anjali from "assets/images/anjali.jpg";
 import suraj from "assets/images/suraj.jpg";
 import MDProgress from "components/MDProgress";
+import { getPlayerTable } from "hooks/dataFetch";
 
 export default function data() {
   const Author = ({ image, name, email }) => (
@@ -52,7 +53,24 @@ export default function data() {
       </MDBox>
     </MDBox>
   );
+  // console.log(getPlayerTable()["0"].last5);
 
+  let temp =getPlayerTable();
+  const getImage = (id) =>  {
+    if(id == 1) return ajay;
+    if(id == 2) return alok;
+    if(id == 3) return anjali;
+    if(id == 4) return shriyam;
+    if(id == 5) return suraj;
+    if(id == 6) return utkarsh;
+  };
+  
+  const getWinColor =(wins) =>{
+    const per = (wins/temp[0].winPer) *100;
+    if(per > 75) return "success";
+    if(per > 34) return "warning";
+    else return  "error";
+  }
   return {
     columns: [
       { Header: "Player", accessor: "author", width: "45%", align: "left" },
@@ -62,173 +80,160 @@ export default function data() {
       { Header: "Cumulative Amount", accessor: "action", align: "center" },
       { Header: "Cumulative Points", accessor: "points", align: "center" },
     ],
-
-    rows: [
+    rows: [  
       {
-        author: <Author image={ajay} name="Ajay" />,
+        author: <Author image={getImage(temp[0].id)} name={temp[0].name}/>,
         function: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            0
+            {temp[0].wins}
           </MDTypography>
         ),
         status: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
+            {temp[0].last5.map((el) => (
+              <MDBadge badgeContent={el.result} color={el.color} variant="gradient" size="sm" />
+            ))}
           </MDBox>
         ),
-        employed: <Progress color="success" value={0} />,
+        employed: <Progress color={getWinColor(temp[0].wins)} value={Math.round((temp[0].wins/temp[0].winPer)*100)} />,
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            0
+            {temp[0].paise}
           </MDTypography>
         ),
         points: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            0
+            {temp[0].points}
           </MDTypography>
         ),
       },
       {
-        author: <Author image={alok} name="Alok" />,
+        author: <Author image={getImage(temp[1].id)} name={temp[1].name}/>,
         function: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            0
+            {temp[1].wins}
           </MDTypography>
         ),
         status: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
+            {temp[1].last5.map((el) => (
+              <MDBadge badgeContent={el.result} color={el.color} variant="gradient" size="sm" />
+            ))}
           </MDBox>
         ),
-        employed: <Progress color="success" value={0} />,
+        employed: <Progress color={getWinColor(temp[1].wins)} value={Math.round((temp[1].wins/temp[1].winPer)*100)} />,
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            0
+            {temp[1].paise}
           </MDTypography>
         ),
         points: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            0
+            {temp[1].points}
           </MDTypography>
         ),
       },
       {
-        author: <Author image={anjali} name="Anjali" />,
+        author: <Author image={getImage(temp[2].id)} name={temp[2].name}/>,
         function: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            0
+            {temp[2].wins}
           </MDTypography>
         ),
         status: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
+            {temp[2].last5.map((el) => (
+              <MDBadge badgeContent={el.result} color={el.color} variant="gradient" size="sm" />
+            ))}
           </MDBox>
         ),
-        employed: <Progress color="success" value={0} />,
+        employed: <Progress color={getWinColor(temp[2].wins)} value={Math.round((temp[2].wins/temp[2].winPer)*100)} />,
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            0
+            {temp[2].paise}
           </MDTypography>
         ),
         points: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            0
+            {temp[2].points}
           </MDTypography>
         ),
       },
       {
-        author: <Author image={shriyam} name="Shriyam" />,
+        author: <Author image={getImage(temp[3].id)}  name={temp[3].name}/>,
         function: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            0
+            {temp[3].wins}
           </MDTypography>
         ),
         status: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
+            {temp[3].last5.map((el) => (
+              <MDBadge badgeContent={el.result} color={el.color} variant="gradient" size="sm" />
+            ))}
           </MDBox>
         ),
-        employed: <Progress color="success" value={0} />,
+        employed: <Progress color={getWinColor(temp[3].wins)} value={Math.round((temp[3].wins/temp[3].winPer)*100)} />,
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            0
+            {temp[3].paise}
           </MDTypography>
         ),
         points: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            0
+            {temp[3].points}
           </MDTypography>
         ),
       },
       {
-        author: <Author image={suraj} name="Suraj" />,
+        author: <Author image={getImage(temp[4].id)}  name={temp[4].name}/>,
         function: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            0
+            {temp[0].wins}
           </MDTypography>
         ),
         status: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
+            {temp[4].last5.map((el) => (
+              <MDBadge badgeContent={el.result} color={el.color} variant="gradient" size="sm" />
+            ))}
           </MDBox>
         ),
-        employed: <Progress color="success" value={0} />,
+        employed: <Progress color={getWinColor(temp[4].wins)} value={Math.round((temp[4].wins/temp[4].winPer)*100)} />,
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            0
+            {temp[4].paise}
           </MDTypography>
         ),
         points: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            0
+            {temp[4].points}
           </MDTypography>
         ),
       },
       {
-        author: <Author image={utkarsh} name="Utkarsh" />,
+        author: <Author image={getImage(temp[5].id)}  name={temp[5].name}/>,
         function: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            0
+            {temp[5].wins}
           </MDTypography>
         ),
         status: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
-            <MDBadge badgeContent="" color="dark" variant="gradient" size="sm" />
+            {temp[5].last5.map((el) => (
+              <MDBadge badgeContent={el.result} color={el.color} variant="gradient" size="sm" />
+            ))}
           </MDBox>
         ),
-        employed: <Progress color="success" value={0} />,
+        employed: <Progress color={getWinColor(temp[5].wins)} value={Math.round((temp[5].wins/temp[5].winPer)*100)} />,
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            0
+            {temp[5].paise}
           </MDTypography>
         ),
         points: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            0
+            {temp[5].points}
           </MDTypography>
         ),
       },

@@ -34,7 +34,6 @@ import projectsTableData from "layouts/tables/data/projectsTableData";
 function Tables() {
   const { columns, rows } = authorsTableData();
   const { columns: pColumns, rows: pRows } = projectsTableData();
-
   return (
     <DashboardLayout>
       <DashboardNavbar />
@@ -59,7 +58,7 @@ function Tables() {
               <MDBox pt={3}>
                 <DataTable
                   table={{ columns, rows }}
-                  isSorted="true"
+                  isSorted={false}
                   entriesPerPage={false}
                   showTotalEntries={false}
                   noEndBorder
@@ -86,7 +85,7 @@ function Tables() {
               <MDBox pt={3}>
                 <DataTable
                   table={{ columns: pColumns, rows: pRows }}
-                  isSorted="true"
+                  isSorted={false}
                   entriesPerPage={false}
                   showTotalEntries={false}
                   noEndBorder

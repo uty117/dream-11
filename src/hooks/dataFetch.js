@@ -1,4 +1,12 @@
 
+import { addAjay,addAlok,addAnjali,addShriyam,addSuraj,addUtkarsh } from "hooks/actionHook";
+let ajay =addAjay();
+let alok=addAlok();
+let anjali=addAnjali();
+let shriyam=addShriyam();
+let suraj=addSuraj();
+let utkarsh =addUtkarsh();
+let totalGames=1;
 export const getMostPicked = () =>  {
     return {
     labels: ["Shreyas", "Gaikwad", "Jadega", "Moeen", "Billings"],
@@ -7,16 +15,18 @@ export const getMostPicked = () =>  {
   };
   
   export const getWins = () =>  {
+    const temp =getPlayerTable();
     return {
         labels: ["Ajay", "Alok", "Anjali", "Shriyam", "Suraj", "Utkarsh"],
-        datasets: { label: "Wins", data: [0, 0, 0, 0, 0, 0] },
+        datasets: { label: "Wins", data: [temp[0].wins, temp[1].wins, temp[2].wins, temp[3].wins, temp[4].wins, temp[5].wins] },
       }
   };
 
   export const getPoints = () =>  {
+    const temp =getPlayerTable();
     return {
         labels: ["Ajay", "Alok", "Anjali", "Shriyam", "Suraj", "Utkarsh"],
-        datasets: { label: "Points", data: [0, 0, 0, 0, 0, 0, 0] },
+        datasets: { label: "Points", data: [temp[0].points, temp[1].points, temp[2].points, temp[3].points, temp[4].points, temp[5].points] },
       }
   };
 
@@ -61,3 +71,61 @@ export const getMostPicked = () =>  {
     }
   };
 
+  export const getPlayerTable =() => {
+    return [
+        {
+            id:1,
+            name:"Ajay",
+            wins:ajay.wins,
+            last5:ajay.last5,
+            winPer:totalGames,
+            points:ajay.points,
+            paise:ajay.paise
+        },
+        {
+            id:2,
+            name:"Alok",
+            wins:alok.wins,
+            last5:alok.last5,
+            winPer:totalGames,
+            points:alok.points,
+            paise:alok.paise
+        },
+        {
+            id:3,
+            name:"Anjali",
+            wins:anjali.wins,
+            last5:anjali.last5,
+            winPer:totalGames,
+            points:anjali.points,
+            paise:anjali.paise,
+        },
+        {
+            id:4,
+            name:"Shriyam",
+            wins:shriyam.wins,
+            last5:shriyam.last5,
+            winPer:totalGames,
+            points:shriyam.points,
+            paise:shriyam.paise
+        },
+        {
+            id:5,
+            name:"Suraj",
+            wins:suraj.wins,
+            last5:suraj.last5,
+            winPer:totalGames,
+            points:suraj.points,
+            paise:suraj.paise
+        },
+        {
+            id:6,
+            name:"Utkarsh",
+            wins:utkarsh.wins,
+            last5:utkarsh.last5,
+            winPer:totalGames,
+            points:utkarsh.points,
+            paise:utkarsh.paise
+        },
+    ]
+  } 

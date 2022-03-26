@@ -54,10 +54,10 @@ function Dashboard() {
                 color="error"
                 icon="moneyicon"
                 title="Paisa"
-                count={0}
+                count={86}
                 percentage={{
                   color: "info",
-                  amount: "TBD",
+                  amount: "Anjali",
                   // label: "than lask week",
                 }}
               />
@@ -66,7 +66,7 @@ function Dashboard() {
         </Grid>
         <MDBox mt={4.5}>
           <Grid container spacing={3}>
-            <Grid item xs={12} lg={4}>
+            <Grid item xs={12} lg={6}>
               <MDBox mb={3}>
                 <ReportsBarChart
                   color="info"
@@ -77,18 +77,18 @@ function Dashboard() {
                 />
               </MDBox>
             </Grid>
-            <Grid item xs={12} md={6} lg={4}>
+            <Grid item xs={12} md={6} lg={6}>
               <MDBox mb={3}>
                 <ReportsBarChart
-                  color="success"
-                  title="Most Valuable Player"
+                  color="error"
+                  title="Points Leaderboard"
                   description="IPL 2022"
                   date="Updated 1 day ago"
-                  chart={getMostValue()}
+                  chart={getPoints()}
                 />
               </MDBox>
             </Grid>
-            <Grid item xs={12} md={6} lg={4}>
+            {/* <Grid item xs={12} md={6} lg={4}>
               <MDBox mb={3}>
                 <ReportsBarChart
                   color="secondary"
@@ -98,7 +98,7 @@ function Dashboard() {
                   chart={getMostPicked()}
                 />
               </MDBox>
-            </Grid>
+            </Grid> */}
           </Grid>
         </MDBox>
         <MDBox mt={4.5}>
@@ -107,10 +107,10 @@ function Dashboard() {
               <MDBox mb={3}>
                 <ReportsBarChart
                   color="primary"
-                  title="Points Leaderboard"
-                  description="IPL 2022"
+                  title="Best Pick Today"
+                  description="CSK VS KKR"
                   date="Updated 1 day ago"
-                  chart={getPoints()}
+                  chart={getMostPicked()}
                 />
               </MDBox>
             </Grid>
