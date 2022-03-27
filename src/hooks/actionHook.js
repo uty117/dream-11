@@ -11,7 +11,7 @@ export const addAjay = () =>  {
                 {result:"TBD",color:"dark"},
             ],
         points:374+ 610.5+ 688 + 0,
-        paise:51++86+43
+        paise:51+86+43
 
     } 
   };
@@ -62,7 +62,7 @@ export const addAlok = () =>  {
                 {result:"TBD",color:"dark"},
             ],
         points:326.5+431 +660.5+0,
-        paise:0+51+
+        paise:0+51
 
     } 
   };
