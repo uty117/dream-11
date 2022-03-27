@@ -7,12 +7,12 @@ import ComplexStatisticsCard from "examples/Cards/StatisticsCards/ComplexStatist
 import Projects from "layouts/dashboard/components/Projects";
 
 
-import { getWins,getMostPicked,getOrange,getPurple,getMostValue,getPoints,getMaxWins,getMaxPoints } from "hooks/dataFetch";
+import { getWins,getMostPicked,getOrange,getPurple,getMostValue,getPoints,getMaxWins,getMaxPoints,getMaxPaise } from "hooks/dataFetch";
 
 function Dashboard() {
     const MostWins =getMaxWins();
     const MostPoints = getMaxPoints();
-
+    const MostPaise = getMaxPaise();
   return (
     <DashboardLayout>
       <DashboardNavbar />
@@ -54,10 +54,10 @@ function Dashboard() {
                 color="error"
                 icon="moneyicon"
                 title="Paisa"
-                count={86}
+                count={MostPaise.paise}
                 percentage={{
                   color: "info",
-                  amount: "Anjali",
+                  amount: `${MostPaise.winner}`,
                   // label: "than lask week",
                 }}
               />

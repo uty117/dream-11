@@ -63,6 +63,7 @@ export const addAlok = () =>  {
             ],
         points:326.5+431 +660.5+0,
         paise:0+51
+        
 
     } 
   };

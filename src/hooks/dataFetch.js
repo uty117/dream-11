@@ -71,6 +71,18 @@ export const getMostPicked = () =>  {
     }
   };
 
+  export const getMaxPaise = () =>  {
+    let winner;
+    const temp =getPlayerTable();
+    const maxPaise =Math.max(temp[0].paise,temp[1].paise,temp[2].paise,temp[3].paise,temp[4].paise,temp[5].paise)
+    for(let i=0;i<temp.length;i++) {
+        if(maxPaise === temp[i].paise) winner=temp[i].name;
+    }
+    return {
+        winner:winner,paise:maxPaise,
+    }
+  };
+
   export const getPlayerTable =() => {
     return [
         {
