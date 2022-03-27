@@ -102,7 +102,7 @@ function Dashboard() {
           </Grid>
         </MDBox>
         <MDBox mt={4.5}>
-          <Grid container spacing={3}>
+          {/* <Grid container spacing={3}>
             <Grid item xs={12} lg={4}>
               <MDBox mb={3}>
                 <ReportsBarChart
@@ -136,7 +136,7 @@ function Dashboard() {
                 />
               </MDBox>
             </Grid>
-          </Grid>
+          </Grid> */}
         </MDBox>
         <MDBox>
           <Grid container spacing={3}>
