@@ -2,16 +2,16 @@
 ////ADD DATA TO AJAY
 export const addAjay = () =>  {
     return{
-        wins:0,
+        wins:1,
         last5:[
                 {result:"W",color:"warning"},
-                {result:"TBD",color:"dark"},
-                {result:"TBD",color:"dark"},
+                {result:"W",color:"warning"},
+                {result:"W",color:"success"},
                 {result:"TBD",color:"dark"},
                 {result:"TBD",color:"dark"},
             ],
-        points:374+ 0,
-        paise:51+0
+        points:374+ 610.5+ 688 + 0,
+        paise:51++86+43
 
     } 
   };
@@ -22,12 +22,12 @@ export const addAlok = () =>  {
         wins:0,
         last5:[
                 {result:"L",color:"error"},
-                {result:"TBD",color:"dark"},
-                {result:"TBD",color:"dark"},
+                {result:"L",color:"error"},
+                {result:"L",color:"error"},
                 {result:"TBD",color:"dark"},
                 {result:"TBD",color:"dark"},
             ],
-        points:303.5+0,
+        points:303.5+453+560.5+0,
         paise:0
 
     } 
@@ -39,12 +39,12 @@ export const addAlok = () =>  {
         wins:1,
         last5:[
                 {result:"W",color:"success"},
-                {result:"TBD",color:"dark"},
-                {result:"TBD",color:"dark"},
+                {result:"L",color:"dark"},
+                {result:"L",color:"error"},
                 {result:"TBD",color:"dark"},
                 {result:"TBD",color:"dark"},
             ],
-        points:395.5+0,
+        points:395.5+0+454.5+0,
         paise:86+0
 
     } 
@@ -56,13 +56,13 @@ export const addAlok = () =>  {
         wins:0,
         last5:[
                 {result:"L",color:"error"},
-                {result:"TBD",color:"dark"},
-                {result:"TBD",color:"dark"},
+                {result:"L",color:"error"},
+                {result:"W",color:"warning"},
                 {result:"TBD",color:"dark"},
                 {result:"TBD",color:"dark"},
             ],
-        points:326.5+0,
-        paise:0
+        points:326.5+431 +660.5+0,
+        paise:0+51+
 
     } 
   };
@@ -73,12 +73,12 @@ export const addAlok = () =>  {
         wins:0,
         last5:[
                 {result:"L",color:"error"},
-                {result:"TBD",color:"dark"},
-                {result:"TBD",color:"dark"},
+                {result:"L",color:"error"},
+                {result:"L",color:"error"},
                 {result:"TBD",color:"dark"},
                 {result:"TBD",color:"dark"},
             ],
-        points:275+0,
+        points:275+487+504.5+0,
         paise:0
 
     } 
@@ -88,16 +88,16 @@ export const addAlok = () =>  {
  //ADD DATA TO UTKARSH  
   export const addUtkarsh = () =>  {
     return{
-        wins:0,
+        wins:1,
         last5:[
+                {result:"W",color:"warning"},
+                {result:"W",color:"success"},
                 {result:"W",color:"warning"},
                 {result:"TBD",color:"dark"},
                 {result:"TBD",color:"dark"},
-                {result:"TBD",color:"dark"},
-                {result:"TBD",color:"dark"},
             ],
-        points:331+0,
-        paise:34+0
+        points:331+698+593+0,
+        paise:34+100+34
 
     } 
   };
