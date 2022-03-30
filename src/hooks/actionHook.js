@@ -36,16 +36,16 @@ export const addAlok = () =>  {
   //ADD DATA TO ANJALI
   export const addAnjali = () =>  {
     return{
-        wins:1,
+        wins:2,
         last5:[
                 {result:"W",color:"success"},
                 {result:"L",color:"dark"},
                 {result:"L",color:"error"},
-                {result:"TBD",color:"dark"},
-                {result:"TBD",color:"dark"},
+                {result:"W",color:"success"},
+                {result:"L",color:"warning"},
             ],
         points:395.5+0+454.5+0,
-        paise:86+0
+        paise:86+0+86+43
 
     } 
   };
@@ -53,7 +53,7 @@ export const addAlok = () =>  {
   //ADD DATA TO SHRIYAM  
   export const addShriyam = () =>  {
     return{
-        wins:0,
+        wins:1,
         last5:[
                 {result:"L",color:"error"},
                 {result:"L",color:"error"},
@@ -62,7 +62,7 @@ export const addAlok = () =>  {
                 {result:"TBD",color:"dark"},
             ],
         points:326.5+431 +660.5+0,
-        paise:0+51
+        paise:0+51+86
         
 
     } 
