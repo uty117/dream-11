@@ -7,10 +7,10 @@ export const addAjay = () =>  {
                 {result:"W",color:"warning"},
                 {result:"W",color:"warning"},
                 {result:"W",color:"success"},
-                {result:"TBD",color:"dark"},
-                {result:"TBD",color:"dark"},
+                {result:"L",color:"error"},
+                {result:"L",color:"error"},
             ],
-        points:374+ 610.5+ 688 + 0,
+        points:374+ 610.5+ 688 + 609+441.5,
         paise:51+86+43
 
     } 
@@ -24,10 +24,10 @@ export const addAlok = () =>  {
                 {result:"L",color:"error"},
                 {result:"L",color:"error"},
                 {result:"L",color:"error"},
-                {result:"TBD",color:"dark"},
-                {result:"TBD",color:"dark"},
+                {result:"L",color:"error"},
+                {result:"L",color:"error"},
             ],
-        points:303.5+453+560.5+0,
+        points:303.5+453+560.5+557+309.5,
         paise:0
 
     } 
@@ -42,10 +42,10 @@ export const addAlok = () =>  {
                 {result:"L",color:"dark"},
                 {result:"L",color:"error"},
                 {result:"W",color:"success"},
-                {result:"L",color:"warning"},
+                {result:"W",color:"warning"},
             ],
-        points:395.5+0+454.5+0,
-        paise:86+0+86+43
+        points:395.5+0+454.5+630.5+522.5,
+        paise:86+0+86+51
 
     } 
   };
@@ -58,11 +58,11 @@ export const addAlok = () =>  {
                 {result:"L",color:"error"},
                 {result:"L",color:"error"},
                 {result:"W",color:"warning"},
-                {result:"TBD",color:"dark"},
-                {result:"TBD",color:"dark"},
+                {result:"W",color:"warning"},
+                {result:"W",color:"success"},
             ],
-        points:326.5+431 +660.5+0,
-        paise:0+51+86
+        points:326.5+431 +660.5+652+472,
+        paise:0+51+86+51
         
 
     } 
@@ -76,10 +76,10 @@ export const addAlok = () =>  {
                 {result:"L",color:"error"},
                 {result:"L",color:"error"},
                 {result:"L",color:"error"},
-                {result:"TBD",color:"dark"},
-                {result:"TBD",color:"dark"},
+                {result:"L",color:"error"},
+                {result:"L",color:"error"},
             ],
-        points:275+487+504.5+0,
+        points:275+487+504.5+536.5,
         paise:0
 
     } 
@@ -94,11 +94,11 @@ export const addAlok = () =>  {
                 {result:"W",color:"warning"},
                 {result:"W",color:"success"},
                 {result:"W",color:"warning"},
-                {result:"TBD",color:"dark"},
-                {result:"TBD",color:"dark"},
+                {result:"L",color:"error"},
+                {result:"W",color:"warning"},
             ],
-        points:331+698+593+0,
-        paise:34+100+34
+        points:331+698+593+615+378,
+        paise:34+100+34+34
 
     } 
   };
