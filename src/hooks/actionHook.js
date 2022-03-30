@@ -39,7 +39,7 @@ export const addAlok = () =>  {
         wins:2,
         last5:[
                 {result:"W",color:"success"},
-                {result:"L",color:"dark"},
+                {result:"L",color:"error"},
                 {result:"L",color:"error"},
                 {result:"W",color:"success"},
                 {result:"W",color:"warning"},
