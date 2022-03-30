@@ -189,7 +189,7 @@ export default function data() {
         author: <Author image={getImage(temp[4].id)}  name={temp[4].name}/>,
         function: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            {temp[0].wins}
+            {temp[4].wins}
           </MDTypography>
         ),
         status: (
