@@ -4,14 +4,14 @@ export const addAjay = () =>  {
     return{
         wins:1,
         last5:[
-                {result:"W",color:"warning"},
-                {result:"W",color:"warning"},
                 {result:"W",color:"success"},
                 {result:"L",color:"error"},
                 {result:"L",color:"error"},
+                {result:"W",color:"warning"},
+                {result:"L",color:"error"},
             ],
-        points:374+ 610.5+ 688 + 609+441.5,
-        paise:51+86+43
+        points:374+ 610.5+ 688 + 609+441.5+567+536,
+        paise:51+86+43+34
 
     } 
   };
@@ -19,16 +19,16 @@ export const addAjay = () =>  {
 //ADD DATA TO ALOK
 export const addAlok = () =>  {
     return{
-        wins:0,
+        wins:2,
         last5:[
                 {result:"L",color:"error"},
                 {result:"L",color:"error"},
                 {result:"L",color:"error"},
-                {result:"L",color:"error"},
-                {result:"L",color:"error"},
+                {result:"W",color:"success"},
+                {result:"W",color:"success"},
             ],
-        points:303.5+453+560.5+557+309.5,
-        paise:0
+        points:303.5+453+560.5+557+309.5+619+597,
+        paise:86+86
 
     } 
   };
@@ -38,13 +38,13 @@ export const addAlok = () =>  {
     return{
         wins:2,
         last5:[
+                {result:"L",color:"error"},
                 {result:"W",color:"success"},
                 {result:"L",color:"error"},
                 {result:"L",color:"error"},
-                {result:"W",color:"success"},
-                {result:"W",color:"warning"},
+                {result:"L",color:"error"},
             ],
-        points:395.5+0+454.5+630.5+522.5,
+        points:395.5+0+454.5+630.5+522.5+546.5+550,
         paise:86+0+86+51
 
     } 
@@ -55,14 +55,14 @@ export const addAlok = () =>  {
     return{
         wins:1,
         last5:[
-                {result:"L",color:"error"},
-                {result:"L",color:"error"},
                 {result:"W",color:"warning"},
                 {result:"W",color:"warning"},
                 {result:"W",color:"success"},
+                {result:"L",color:"error"},,
+                {result:"W",color:"warning"},
             ],
-        points:326.5+431 +660.5+652+472,
-        paise:0+51+86+51
+        points:326.5+431 +660.5+652+472+423.5+570,
+        paise:0+51+86+51+51
         
 
     } 
@@ -79,7 +79,7 @@ export const addAlok = () =>  {
                 {result:"L",color:"error"},
                 {result:"L",color:"error"},
             ],
-        points:275+487+504.5+536.5,
+        points:275+487+504.5+536.5+527+0+489,
         paise:0
 
     } 
@@ -92,13 +92,13 @@ export const addAlok = () =>  {
         wins:1,
         last5:[
                 {result:"W",color:"warning"},
-                {result:"W",color:"success"},
                 {result:"W",color:"warning"},
                 {result:"L",color:"error"},
                 {result:"W",color:"warning"},
+                {result:"W",color:"warning"},
             ],
-        points:331+698+593+615+378,
-        paise:34+100+34+34
+        points:331+698+593+615+378+567.5+588.5,
+        paise:34+100+34+34+51+34
 
     } 
   };

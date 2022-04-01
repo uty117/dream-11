@@ -190,12 +190,12 @@ export default function data() {
         ),
         result: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="RCB" color="error" variant="gradient" size="sm" />
           </MDBox>
         ),
         completion: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="Alok" color="success" variant="gradient" size="sm" />
           </MDBox>
         ),
       },
@@ -214,12 +214,12 @@ export default function data() {
         ),
         result: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="LSG" color="error" variant="gradient" size="sm" />
           </MDBox>
         ),
         completion: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="Alok" color="success" variant="gradient" size="sm" />
           </MDBox>
         ),
       },
