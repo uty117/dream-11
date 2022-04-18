@@ -6,7 +6,7 @@ let anjali=addAnjali();
 let shriyam=addShriyam();
 let suraj=addSuraj();
 let utkarsh =addUtkarsh();
-let totalGames=19;
+let totalGames=30;
 export const getMostPicked = () =>  {
     return {
     labels: ["Shreyas", "Gaikwad", "Jadega", "Moeen", "Billings"],
@@ -56,6 +56,7 @@ export const getMostPicked = () =>  {
     const maxWins = Math.max(...wins.datasets.data);
     const index = wins.datasets.data.indexOf(maxWins);
     const winner =wins.labels[index];
+    const Maxpoints=getMaxPoints();
     return {
         winner:winner,wins:maxWins,
     }
