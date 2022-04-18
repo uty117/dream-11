@@ -550,12 +550,12 @@ export default function data() {
         ),
         result: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="LSG" color="error" variant="gradient" size="sm" />
           </MDBox>
         ),
         completion: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="Shriyam" color="success" variant="gradient" size="sm" />
           </MDBox>
         ),
       },
@@ -574,12 +574,12 @@ export default function data() {
         ),
         result: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="CSK" color="error" variant="gradient" size="sm" />
           </MDBox>
         ),
         completion: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="Suraj" color="success" variant="gradient" size="sm" />
           </MDBox>
         ),
       },
@@ -598,12 +598,12 @@ export default function data() {
         ),
         result: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="PBKS" color="error" variant="gradient" size="sm" />
           </MDBox>
         ),
         completion: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="Ajay" color="success" variant="gradient" size="sm" />
           </MDBox>
         ),
       },
@@ -622,12 +622,12 @@ export default function data() {
         ),
         result: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="GT" color="error" variant="gradient" size="sm" />
           </MDBox>
         ),
         completion: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="Utkarsh" color="success" variant="gradient" size="sm" />
           </MDBox>
         ),
       },
@@ -646,12 +646,12 @@ export default function data() {
         ),
         result: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="SRH" color="error" variant="gradient" size="sm" />
           </MDBox>
         ),
         completion: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="Suraj" color="success" variant="gradient" size="sm" />
           </MDBox>
         ),
       },
@@ -670,12 +670,12 @@ export default function data() {
         ),
         result: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="LSG" color="error" variant="gradient" size="sm" />
           </MDBox>
         ),
         completion: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="Ajay" color="dark" variant="gradient" size="sm" />
           </MDBox>
         ),
       },
@@ -694,12 +694,12 @@ export default function data() {
         ),
         result: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="RCB" color="error" variant="gradient" size="sm" />
           </MDBox>
         ),
         completion: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="Utkarsh" color="success" variant="gradient" size="sm" />
           </MDBox>
         ),
       },
@@ -718,12 +718,12 @@ export default function data() {
         ),
         result: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="SRH" color="error" variant="gradient" size="sm" />
           </MDBox>
         ),
         completion: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="Anjali" color="success" variant="gradient" size="sm" />
           </MDBox>
         ),
       },
@@ -742,12 +742,36 @@ export default function data() {
         ),
         result: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="GT" color="error" variant="gradient" size="sm" />
           </MDBox>
         ),
         completion: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="TBD" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="Anjali" color="success" variant="gradient" size="sm" />
+          </MDBox>
+        ),
+      },
+      {
+        venue: (
+          <MDTypography variant="caption" color="text" fontWeight="medium">
+            Brabourne
+          </MDTypography>
+        ),
+        home: <Company image={rr} name="RR" />,
+        away: <Company image={kkr} name="KKR" />,
+        date: (
+          <MDTypography variant="caption" color="text" fontWeight="medium">
+            18 April
+          </MDTypography>
+        ),
+        result: (
+          <MDBox ml={-1}>
+            <MDBadge badgeContent="RR" color="error" variant="gradient" size="sm" />
+          </MDBox>
+        ),
+        completion: (
+          <MDBox ml={-1}>
+            <MDBadge badgeContent="Utkarsh" color="success" variant="gradient" size="sm" />
           </MDBox>
         ),
       },
