@@ -675,7 +675,7 @@ export default function data() {
         ),
         completion: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="Ajay" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="Ajay" color="success" variant="gradient" size="sm" />
           </MDBox>
         ),
       },
