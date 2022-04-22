@@ -33,6 +33,7 @@ import srh from "assets/images/srh.jpg";
 import gt from "assets/images/gt.jpg";
 import luc from "assets/images/luc.jpg";
 import dc from "assets/images/dc.jpg";
+import { Mic } from "@mui/icons-material";
 
 export default function data() {
   const Company = ({ image, name }) => (
@@ -762,6 +763,102 @@ export default function data() {
         date: (
           <MDTypography variant="caption" color="text" fontWeight="medium">
             18 April
+          </MDTypography>
+        ),
+        result: (
+          <MDBox ml={-1}>
+            <MDBadge badgeContent="RR" color="error" variant="gradient" size="sm" />
+          </MDBox>
+        ),
+        completion: (
+          <MDBox ml={-1}>
+            <MDBadge badgeContent="Utkarsh" color="success" variant="gradient" size="sm" />
+          </MDBox>
+        ),
+      },
+      {
+        venue: (
+          <MDTypography variant="caption" color="text" fontWeight="medium">
+            DY PATIL
+          </MDTypography>
+        ),
+        home: <Company image={luc} name="LSG" />,
+        away: <Company image={rcb} name="RCB" />,
+        date: (
+          <MDTypography variant="caption" color="text" fontWeight="medium">
+            19 April
+          </MDTypography>
+        ),
+        result: (
+          <MDBox ml={-1}>
+            <MDBadge badgeContent="RCB" color="error" variant="gradient" size="sm" />
+          </MDBox>
+        ),
+        completion: (
+          <MDBox ml={-1}>
+            <MDBadge badgeContent="Alok" color="success" variant="gradient" size="sm" />
+          </MDBox>
+        ),
+      },
+      {
+        venue: (
+          <MDTypography variant="caption" color="text" fontWeight="medium">
+            Brabourne
+          </MDTypography>
+        ),
+        home: <Company image={dc} name="DC" />,
+        away: <Company image={punjab} name="PBKS" />,
+        date: (
+          <MDTypography variant="caption" color="text" fontWeight="medium">
+            20 April
+          </MDTypography>
+        ),
+        result: (
+          <MDBox ml={-1}>
+            <MDBadge badgeContent="DC" color="error" variant="gradient" size="sm" />
+          </MDBox>
+        ),
+        completion: (
+          <MDBox ml={-1}>
+            <MDBadge badgeContent="Alok" color="success" variant="gradient" size="sm" />
+          </MDBox>
+        ),
+      },
+      {
+        venue: (
+          <MDTypography variant="caption" color="text" fontWeight="medium">
+            DY PATIL
+          </MDTypography>
+        ),
+        home: <Company image={csk} name="CSK" />,
+        away: <Company image={mi} name="MI" />,
+        date: (
+          <MDTypography variant="caption" color="text" fontWeight="medium">
+            21 April
+          </MDTypography>
+        ),
+        result: (
+          <MDBox ml={-1}>
+            <MDBadge badgeContent="CSK" color="error" variant="gradient" size="sm" />
+          </MDBox>
+        ),
+        completion: (
+          <MDBox ml={-1}>
+            <MDBadge badgeContent="Suraj" color="success" variant="gradient" size="sm" />
+          </MDBox>
+        ),
+      },
+      {
+        venue: (
+          <MDTypography variant="caption" color="text" fontWeight="medium">
+            WANKHADE
+          </MDTypography>
+        ),
+        home: <Company image={rr} name="RR" />,
+        away: <Company image={dc} name="DC" />,
+        date: (
+          <MDTypography variant="caption" color="text" fontWeight="medium">
+            22 April
           </MDTypography>
         ),
         result: (
