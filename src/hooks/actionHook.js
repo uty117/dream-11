@@ -2,7 +2,7 @@
 ////ADD DATA TO AJAY
 export const addAjay = () =>  {
     return{
-        wins:7,
+        wins:8,
         last5:[
                 {result:"W",color:"warning"},
                 {result:"L",color:"error"},

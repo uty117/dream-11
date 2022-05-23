@@ -6,7 +6,7 @@ let anjali=addAnjali();
 let shriyam=addShriyam();
 let suraj=addSuraj();
 let utkarsh =addUtkarsh();
-let totalGames=69;
+let totalGames=70;
 export const getMostPicked = () =>  {
     return {
     labels: ["Shreyas", "Gaikwad", "Jadega", "Moeen", "Billings"],
