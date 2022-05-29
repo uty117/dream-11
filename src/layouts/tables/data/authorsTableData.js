@@ -80,37 +80,11 @@ export default function data() {
       { Header: "Cumulative Amount", accessor: "action", align: "center" },
       { Header: "Cumulative Points", accessor: "points", align: "center" },
     ],
-    rows: [  
-      {
-        author: <Author image={getImage(temp[0].id)} name={temp[0].name}/>,
-        function: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            {temp[0].wins}
-          </MDTypography>
-        ),
-        status: (
-          <MDBox ml={-1}>
-            {temp[0].last5.map((el) => (
-              <MDBadge badgeContent={el.result} color={el.color} variant="gradient" size="sm" />
-            ))}
-          </MDBox>
-        ),
-        employed: <Progress color={getWinColor(temp[0].wins)} value={Math.round((temp[0].wins/temp[0].winPer)*100)} />,
-        action: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            {temp[0].paise}
-          </MDTypography>
-        ),
-        points: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            {temp[0].points}
-          </MDTypography>
-        ),
-      },
+    rows: [
       {
         author: <Author image={getImage(temp[1].id)} name={temp[1].name}/>,
         function: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography component="a" href="#" variant="caption" color="success" fontWeight="bold">
             {temp[1].wins}
           </MDTypography>
         ),
@@ -132,7 +106,7 @@ export default function data() {
             {temp[1].points}
           </MDTypography>
         ),
-      },
+      },  
       {
         author: <Author image={getImage(temp[2].id)} name={temp[2].name}/>,
         function: (
@@ -227,13 +201,39 @@ export default function data() {
         ),
         employed: <Progress color={getWinColor(temp[5].wins)} value={Math.round((temp[5].wins/temp[5].winPer)*100)} />,
         action: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography component="a" href="#" variant="caption" color="success" fontWeight="medium">
             {temp[5].paise}
           </MDTypography>
         ),
         points: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          <MDTypography component="a" href="#" variant="caption" color="success" fontWeight="medium">
             {temp[5].points}
+          </MDTypography>
+        ),
+      },
+      {
+        author: <Author image={getImage(temp[0].id)} name={temp[0].name}/>,
+        function: (
+          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+            {temp[0].wins}
+          </MDTypography>
+        ),
+        status: (
+          <MDBox ml={-1}>
+            {temp[0].last5.map((el) => (
+              <MDBadge badgeContent={el.result} color={el.color} variant="gradient" size="sm" />
+            ))}
+          </MDBox>
+        ),
+        employed: <Progress color={getWinColor(temp[0].wins)} value={Math.round((temp[0].wins/temp[0].winPer)*100)} />,
+        action: (
+          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+            {temp[0].paise}
+          </MDTypography>
+        ),
+        points: (
+          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+            {temp[0].points}
           </MDTypography>
         ),
       },

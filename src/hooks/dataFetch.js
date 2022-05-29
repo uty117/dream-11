@@ -6,7 +6,7 @@ let anjali=addAnjali();
 let shriyam=addShriyam();
 let suraj=addSuraj();
 let utkarsh =addUtkarsh();
-let totalGames=72;
+let totalGames=74;
 export const getMostPicked = () =>  {
     return {
     labels: ["Shreyas", "Gaikwad", "Jadega", "Moeen", "Billings"],
@@ -17,8 +17,8 @@ export const getMostPicked = () =>  {
   export const getWins = () =>  {
     const temp =getPlayerTable();
     return {
-        labels: ["Ajay", "Alok", "Anjali", "Shriyam", "Suraj", "Utkarsh"],
-        datasets: { label: "Wins", data: [temp[0].wins, temp[1].wins, temp[2].wins, temp[3].wins, temp[4].wins, temp[5].wins] },
+        labels: ["Alok", "Anjali", "Shriyam", "Suraj", "Utkarsh","Ajay" ],
+        datasets: { label: "Wins", data: [temp[1].wins, temp[2].wins, temp[3].wins, temp[4].wins, temp[5].wins,temp[0].wins] },
       }
   };
 
